@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <title>Happy valentine's day</title>
+</head>
+
+<body>
+
+    <audio id="background-music" autoplay loop>
+        <source src="Music&Image/lucky_one.mp3" type="audio/mp3">
+      </audio>
+
+    <div class="Happy_valantine">
+
+        <div class="valentine_Card">
+
+        <div class="clouds"></div>
+
+        <div class="hearts">
+
+
+            <div class="heartsOne">
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+            <div class="heartsTwo">
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+            <div class="heartsThree">
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+            <div class="heartsFour">
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+            <div class="heartsFive">
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+
+        </div>
+
+        <div class="text"><span>Happy Valantine's</span></div>
+        </div>
+
+        <p class="hover"> </p>
+
+        
+        
+
+        <div id="buttonContainer">
+            <button id="myButton" class="button-6" role="button" onclick="changeToImage()">Love You💕</button>
+            <img id="myImage" src="Music&Image/cute-love.gif" alt="Image">
+        </div>
+        
+    
+    </div>
+    
+
+
+
+    <script>
+        function changeToImage() {
+          const button = document.getElementById('myButton');
+          const image = document.getElementById('myImage');
+          button.style.display = 'none';
+          image.style.display = 'block';
+        }
+      </script>
+
+<script>
+    // เข้าถึง audio element โดยใช้ ID
+    const backgroundMusic = document.getElementById('background-music');
+  
+    // ควบคุมการเล่น/หยุดเพลง
+    function toggleMusic() {
+      if (backgroundMusic.paused) {
+        backgroundMusic.play();
+      } else {
+        backgroundMusic.play();
+      }
+    }
+  
+    // เพิ่ม event listener เมื่อผู้ใช้คลิกที่หน้าเว็บ
+    document.addEventListener('click', () => {
+      toggleMusic();
+    });
+  </script>
+</body>
+</html>
